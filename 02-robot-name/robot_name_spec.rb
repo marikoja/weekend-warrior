@@ -15,10 +15,11 @@ describe "Robot Name" do
     # `must_match` is looking to verify the format of the name
     # see the README for specs regarding name format
     expect(Robot.new.name).must_match NAME_REGEXP
+
   end
 
   it "Check that the name sticks" do
-    skip
+
     robot = Robot.new
     name  = robot.name
 
@@ -27,7 +28,7 @@ describe "Robot Name" do
   end
 
   it "Check different robots have different names" do
-    skip
+
     # there is a very, very small probability of name collision here
     # ensuring the name is globally unique is beyond the scope of this exercise
 
@@ -36,7 +37,7 @@ describe "Robot Name" do
   end
 
   it "Check reset name" do
-    skip
+    
     robot = Robot.new
     name = robot.name
 
